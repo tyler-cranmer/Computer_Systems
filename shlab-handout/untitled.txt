@@ -1,0 +1,7 @@
+else if(WIFEXITED(status)){
+       job = getjobpid(jobs,pid);
+       printf("Job [%d] (%d) terminated by signal %d, WIFEXITED/WEXITSTATUS\n",job->jid, job->pid, WEXITSTATUS(status));
+        deletejob(jobs,pid);
+        sigprocmask(SIG_SETMASK, &prev_all, NULL);
+        
+    }
