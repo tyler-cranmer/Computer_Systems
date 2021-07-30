@@ -1,0 +1,8 @@
+break phase_1
+break phase_6
+break explode_bomb
+break *0x08048dcc
+break *0x08048df1
+break *0x08048e75
+
+
